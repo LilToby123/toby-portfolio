@@ -5,7 +5,7 @@ Personal portfolio for [@0xToby_eth](https://x.com/0xToby_eth) — XRPL native c
 **Live site:** https://liltoby123.github.io/toby-portfolio/
 
 ## Stack
-Static HTML/CSS. No build step.
+Static HTML/CSS. No build step. Real pixel PFP + banner embedded as data-URIs for zero external image requests.
 
 ## Local
 Open `index.html` in a browser, or:
