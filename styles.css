@@ -23,6 +23,7 @@ a{color:inherit}
 .site-header{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--border);background:rgba(11,10,15,.94)}
 .logo{display:inline-flex;align-items:center;gap:.65rem;text-decoration:none;font-family:var(--font-display);font-size:1.35rem;letter-spacing:-.02em}
 .logo-mark{width:28px;height:28px;border-radius:4px;object-fit:cover;border:1px solid var(--border)}
+.logo-mark-bg{width:28px;height:28px;border-radius:4px;border:1px solid var(--border);display:inline-block;vertical-align:middle;background:#5b0f7a url(https://avatars.githubusercontent.com/u/213191141?v=4&s=80) center/cover no-repeat}
 .site-nav{display:flex;align-items:center;gap:.15rem}
 .site-nav a{text-decoration:none;font-size:.9rem;color:var(--fg-muted);padding:.45rem .7rem;border-radius:8px}
 .site-nav a:hover{color:var(--fg)}
@@ -32,11 +33,8 @@ a{color:inherit}
 .nav-toggle span{display:block;width:18px;height:1.5px;background:var(--fg)}
 .hero{border-bottom:1px solid var(--border)}
 .hero-banner{border-bottom:1px solid var(--border);background:#760b7f}
-.hero-banner-css{background:linear-gradient(135deg,#5b0f7a 0%,#9b3db8 45%,#760b7f 100%);min-height:160px;display:flex;align-items:center;justify-content:center;padding:2rem 1.25rem}
-.hero-banner-inner{text-align:center;display:flex;flex-direction:column;gap:.15rem}
-.hb-name{font-family:var(--font-display);font-size:clamp(2.5rem,8vw,4rem);color:#f0ec4a;letter-spacing:-.02em;line-height:1;text-shadow:2px 2px 0 #1a0a20}
-.hb-title,.hb-sub{font-family:var(--font-body);font-weight:700;font-size:clamp(.95rem,3vw,1.35rem);color:#fff;letter-spacing:.04em;text-shadow:1px 1px 0 #1a0a20}
-@media(min-width:860px){.hero-banner-css{min-height:220px;padding:2.5rem}}
+.hero-banner-bg{background:linear-gradient(135deg,#5b0f7a 0%,#9b3db8 45%,#760b7f 100%);min-height:160px}
+@media(min-width:860px){.hero-banner-bg{min-height:220px}}
 .hero-body{max-width:var(--max);margin:0 auto;padding:2.5rem 1.25rem 3.25rem;display:grid;gap:2.5rem;align-items:center}
 @media(min-width:860px){.hero-body{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);padding:3.5rem 1.5rem 4rem}}
 .eyebrow{margin:0;font-family:var(--font-mono);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted)}
@@ -53,8 +51,8 @@ a{color:inherit}
 .btn-lg{min-height:48px;padding-inline:1.4rem}
 .hero-portrait{display:flex;justify-content:center}
 .pixel-frame{position:relative;width:min(100%,280px);padding:6px;background:linear-gradient(90deg,var(--accent) 2px,transparent 2px) 0 0/10px 10px,linear-gradient(var(--accent) 2px,transparent 2px) 0 0/10px 10px,var(--bg-elevated);border:1px solid var(--border);border-radius:4px;box-shadow:0 20px 50px -30px rgba(0,0,0,.9)}
-.pixel-frame img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--border);background:#5b0f7a;border-radius:2px}
-.section{padding:4rem 0;border-bottom:1px solid var(--border)}
+.pixel-portrait{width:100%;aspect-ratio:1;border-radius:2px;border:1px solid var(--border);background:#5b0f7a url(https://avatars.githubusercontent.com/u/213191141?v=4&s=400) center/cover no-repeat}
+.section{padding:4rem 0;border-bottom:1px solid var(--border);content-visibility:auto;contain-intrinsic-size:auto 640px}
 .section-inner{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
 .section-inner.narrow{max-width:40rem}
 .section h2{margin:.55rem 0 0;font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3rem);font-weight:400;letter-spacing:-.025em;line-height:1.1}
