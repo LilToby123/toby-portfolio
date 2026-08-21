@@ -1,10 +1,10 @@
-:root{--bg:#0b0a0f;--bg-elevated:#12101a;--bg-card:#16131f;--fg:#f2edf6;--fg-muted:#9a93a8;--border:#2a2436;--accent:#9b3db8;--highlight:#f0ec4a;--font-display:"Instrument Serif",Georgia,serif;--font-body:"Outfit",system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--max:68rem;--radius:12px}
+:root{--bg:#0b0a0f;--bg-elevated:#12101a;--bg-card:#16131f;--fg:#f2edf6;--fg-muted:#9a93a8;--border:#2a2436;--accent:#9b3db8;--highlight:#f0ec4a;--font-display:"Instrument Serif",Georgia,serif;--font-body:"Outfit",system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--max:68rem;--radius:12px;--pfp:url("https://d.uguu.se/PnsBjwxU.webp");--banner:url("https://n.uguu.se/kxWFlRdf.webp")}
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:1rem;line-height:1.55}img{max-width:100%;display:block}a{color:inherit}
 .pixel-grid{pointer-events:none;position:fixed;inset:0;z-index:0;opacity:.035;background-image:linear-gradient(to right,#fff 1px,transparent 1px),linear-gradient(to bottom,#fff 1px,transparent 1px);background-size:12px 12px}
 .site-header,main,.site-footer{position:relative;z-index:1}
 .site-header{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--border);background:rgba(11,10,15,.94)}
 .logo{display:inline-flex;align-items:center;gap:.65rem;text-decoration:none;font-family:var(--font-display);font-size:1.35rem;letter-spacing:-.02em}
-.logo-mark-bg{width:28px;height:28px;border-radius:4px;border:1px solid var(--border);display:inline-block;vertical-align:middle;background:#5b0f7a}
+.logo-mark-bg{width:28px;height:28px;border-radius:4px;border:1px solid var(--border);display:inline-block;vertical-align:middle;background:#5b0f7a var(--pfp) center/cover no-repeat}
 .site-nav{display:flex;align-items:center;gap:.15rem}
 .site-nav a{text-decoration:none;font-size:.9rem;color:var(--fg-muted);padding:.45rem .7rem;border-radius:8px}
 .site-nav a:hover{color:var(--fg)}
@@ -14,7 +14,7 @@
 .nav-toggle span{display:block;width:18px;height:1.5px;background:var(--fg)}
 .hero{border-bottom:1px solid var(--border)}
 .hero-banner{border-bottom:1px solid var(--border);background:#760b7f}
-.hero-banner-bg{background:#760b7f;min-height:160px}
+.hero-banner-bg{background:#760b7f var(--banner) center/cover no-repeat;min-height:160px}
 @media(min-width:860px){.hero-banner-bg{min-height:220px}}
 .hero-body{max-width:var(--max);margin:0 auto;padding:2.5rem 1.25rem 3.25rem;display:grid;gap:2.5rem;align-items:center}
 @media(min-width:860px){.hero-body{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);padding:3.5rem 1.5rem 4rem}}
@@ -32,7 +32,7 @@
 .btn-lg{min-height:48px;padding-inline:1.4rem}
 .hero-portrait{display:flex;justify-content:center}
 .pixel-frame{position:relative;width:min(100%,280px);padding:6px;background:linear-gradient(90deg,var(--accent) 2px,transparent 2px) 0 0/10px 10px,linear-gradient(var(--accent) 2px,transparent 2px) 0 0/10px 10px,var(--bg-elevated);border:1px solid var(--border);border-radius:4px;box-shadow:0 20px 50px -30px rgba(0,0,0,.9)}
-.pixel-portrait{width:100%;aspect-ratio:1;border-radius:2px;border:1px solid var(--border);background:#5b0f7a}
+.pixel-portrait{width:100%;aspect-ratio:1;border-radius:2px;border:1px solid var(--border);background:#5b0f7a var(--pfp) center/cover no-repeat}
 .section{padding:4rem 0;border-bottom:1px solid var(--border);content-visibility:auto;contain-intrinsic-size:auto 640px}
 .section-inner{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
 .section-inner.narrow{max-width:40rem}
@@ -81,8 +81,3 @@
 .footer-x:hover{color:var(--fg)}
 @media(max-width:760px){.nav-toggle{display:flex}.site-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:.75rem 1rem 1rem;background:var(--bg);border-bottom:1px solid var(--border)}.site-nav.open{display:flex}.site-nav a{padding:.85rem .5rem;border-bottom:1px solid var(--border)}.nav-cta{margin:.5rem 0 0;text-align:center;border:1px solid var(--border)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
-.hero-banner-bg{background:linear-gradient(135deg,#5b0f7a 0%,#9b3db8 50%,#760b7f 100%);min-height:160px}
-@media(min-width:860px){.hero-banner-bg{min-height:220px}}
-.pixel-portrait{background:#5b0f7a}
-.logo-mark-bg{background:#5b0f7a}
