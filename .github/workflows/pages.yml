@@ -26,7 +26,7 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site/assets
-          cp index.html styles.css app.js favicon.svg README.md _site/
+          cp index.html styles.css app.js favicon.svg README.md og.jpg _site/
           cp assets/toby-portrait.jpg assets/portrait.svg _site/assets/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
