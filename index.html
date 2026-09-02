@@ -3,187 +3,582 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Toby — Web3 CM &amp; Content Writer | XRPL</title>
-  <meta name="description" content="Toby (@0xToby_eth) — Web3 community manager, moderator, and content writer for XRPL projects. Let's build together." />
-  <meta name="theme-color" content="#0b0a0f" />
+  <title>Toby | Web3 Community Manager, Moderator & Content Writer</title>
+  <meta name="description" content="Web3 Community Manager, Moderator and Content Writer helping XRPL and Web3 projects build stronger communities, better content and consistent brand communication." />
+  <meta name="theme-color" content="#09080c" />
+  <meta name="author" content="Toby" />
+  <link rel="canonical" href="https://liltoby123.github.io/toby-portfolio/" />
+  <meta property="og:title" content="Toby | Web3 Community Manager, Moderator & Content Writer" />
+  <meta property="og:description" content="Web3 Community Manager, Moderator and Content Writer helping XRPL and Web3 projects build stronger communities, better content and consistent brand communication." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://liltoby123.github.io/toby-portfolio/" />
+  <meta property="og:image" content="https://liltoby123.github.io/toby-portfolio/assets/toby-portrait.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Toby | Web3 Community Manager, Moderator & Content Writer" />
+  <meta name="twitter:description" content="Web3 Community Manager, Moderator and Content Writer helping XRPL and Web3 projects build stronger communities, better content and consistent brand communication." />
+  <meta name="twitter:image" content="https://liltoby123.github.io/toby-portfolio/assets/toby-portrait.jpg" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="pixel-grid" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="logo" href="#top">
-      <span class="logo-mark-bg" role="img" aria-label="Toby"></span>
-      <span>Toby</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" id="navToggle">
-      <span></span><span></span>
-    </button>
-    <nav class="site-nav" id="siteNav">
-      <a href="#work">Work</a>
-      <a href="#roster">Roster</a>
-      <a href="#services">Services</a>
-      <a href="#writing">Writing</a>
-      <a href="#rates">Rates</a>
-      <a class="nav-cta" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">DM on X</a>
-    </nav>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <div class="hero-banner"><div class="hero-banner-bg" role="img" aria-label="Toby — Web3 CM & Moderator, Content Writer"></div></div>
-      <div class="hero-body">
-        <div class="hero-copy">
-          <p class="eyebrow">XRPL native · @0xToby_eth · 20.2K on X</p>
-          <h1>Toby <span class="sig" aria-hidden="true">🃏</span></h1>
-          <p class="title-line">Web3 CM, Moderator &amp; Content Writer</p>
-          <p class="lede">Let’s build together. I run community and content for XRPL projects — daily voice, moderation, campaign writing, and consistent brand tone across multiple accounts at once.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">DM me on X</a>
-            <a class="btn btn-ghost" href="https://x.com/0xToby_eth" target="_blank" rel="noopener noreferrer">View profile</a>
+  <div class="page">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap site-bar">
+        <a class="logo" href="#top">
+          <img src="assets/toby-portrait.jpg" width="32" height="32" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <img src="assets/portrait.svg" width="32" height="32" alt="" style="display:none" />
+          Toby
+        </a>
+        <nav class="nav-desk" aria-label="Primary">
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#packages">Packages</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-primary ml" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Work With Me</a>
+        </nav>
+        <button class="nav-toggle" type="button" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+      <nav aria-label="Mobile">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-lg" style="margin-top:1rem" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Work With Me</a>
+      </nav>
+    </div>
+
+    <main id="main">
+      <section class="section" id="top" style="padding-top:2.5rem">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">XRPL Native · @0xToby_eth · 20K+ on X</p>
+            <h1 class="display">Toby</h1>
+            <p class="title-line">Web3 Community Manager, Moderator & Content Writer</p>
+            <p class="lede">I help Web3 projects build stronger communities, communicate clearly, and maintain a consistent voice across X, Discord and Telegram.</p>
+            <div class="actions">
+              <a class="btn btn-primary btn-lg" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Work With Me</a>
+              <a class="btn btn-ghost btn-lg" href="#work">View My Work</a>
+            </div>
+            <p class="avail"><span class="dot"></span> Available for selected Web3 projects</p>
+          </div>
+          <div class="desk" aria-hidden="true">
+            <div class="desk-inner">
+              <div class="desk-top">
+                <span style="display:inline-flex;align-items:center;gap:.5rem">
+                  <img src="assets/toby-portrait.jpg" alt="" width="32" height="32" onerror="this.src='assets/portrait.svg'" />
+                  <span class="desk-label">Community desk</span>
+                </span>
+                <span class="micro" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--muted)"><span class="dot"></span> Live</span>
+              </div>
+              <div class="desk-grid">
+                <article class="desk-card span-2">
+                  <p class="desk-label">X draft</p>
+                  <p style="margin:.5rem 0 0;font-family:var(--font-display);font-size:1.15rem">gm. keep the room talking.</p>
+                  <p style="margin:.35rem 0 0;color:var(--muted);font-size:.9rem">Scheduled for the Pollux desk. Brand voice locked.</p>
+                </article>
+                <article class="desk-card">
+                  <p class="desk-label">Community</p>
+                  <div class="mini"><b>#announcements</b><span>Week 2 drop is live. Rules in the pin.</span></div>
+                  <div class="mini"><b>mod queue</b><span>Welcome flow checked. Chat is moving.</span></div>
+                </article>
+                <article class="desk-card hide-sm">
+                  <p class="desk-label">Campaign</p>
+                  <p style="margin:.5rem 0 0;font-family:var(--font-display);font-size:1.25rem">Giveaway series</p>
+                  <div class="weeks">
+                    <span class="week">W1</span><span class="week on">W2</span><span class="week">W3</span><span class="week">W4</span>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="hero-portrait">
-          <div class="pixel-frame"><div class="pixel-portrait" role="img" aria-label="Toby pixel-art profile picture"></div></div>
+      </section>
+
+      <section aria-label="Quick facts">
+        <div class="wrap stats">
+          <div class="stat"><b>20K+</b><span>X Audience</span></div>
+          <div class="stat"><b>XRPL</b><span>Native</span></div>
+          <div class="stat"><b>Multiple</b><span>Web3 Projects</span></div>
+          <div class="stat"><b>Community</b><span>Management</span></div>
         </div>
-      </div>
-    </section>
-    <section class="section proof" id="work">
-      <div class="section-inner">
-        <p class="eyebrow">Proof of work</p>
-        <h2>Where the reputation started.</h2>
-        <article class="proof-card">
-          <p class="proof-label">XRP Conspiracy · Series 1</p>
-          <p class="proof-body">Co-managed community and launch communications for <strong>XRP Conspiracy Series 1</strong> — an NFT collection that sold out <strong>1,230 NFTs in under 24 hours</strong> — alongside Mike Berger and the team. That launch is where my name in XRPL community work began.</p>
-        </article>
-      </div>
-    </section>
-    <section class="section roster" id="roster">
-      <div class="section-inner">
-        <p class="eyebrow">Current roster</p>
-        <h2>Five active desks.</h2>
-        <p class="section-lede">Each project gets its own voice. None of them should sound like the same person.</p>
-        <div class="desk-grid">
-          <article class="desk-card">
-            <p class="desk-role">Marketing Lead</p>
-            <h3>Possum Tails</h3>
-            <p class="desk-handle">@xrppossum</p>
-            <p class="desk-body">Running a 4-week giveaway content series — weekly drops, tournament write-ups, Saturday ops — plus feature articles. Landed the paid role after writing a free feature article as a goodwill contribution.</p>
-            <a class="desk-link" href="https://x.com/xrppossum" target="_blank" rel="noopener noreferrer">Open on X →</a>
-          </article>
-          <article class="desk-card">
-            <p class="desk-role">Community Manager</p>
-            <h3>Rhyzlo</h3>
-            <p class="desk-handle">@rhyzlo_xrpl</p>
-            <p class="desk-body">Built Discord and Telegram from scratch, completed a 30-day trial, signed an NDA. Turned a public challenge from XRPL builders into a collaborator relationship.</p>
-            <a class="desk-link" href="https://x.com/rhyzlo_xrpl" target="_blank" rel="noopener noreferrer">Open on X →</a>
-          </article>
-          <article class="desk-card">
-            <p class="desk-role">Community Manager</p>
-            <h3>Pollux</h3>
-            <p class="desk-handle">@POLLUX_XRPL</p>
-            <p class="desk-body">Delegate posting access. Educational content on PLX tokenomics and the lineage royalty mechanic.</p>
-            <a class="desk-link" href="https://x.com/POLLUX_XRPL" target="_blank" rel="noopener noreferrer">Open on X →</a>
-          </article>
-          <article class="desk-card">
-            <p class="desk-role">Community Manager</p>
-            <h3>ChillGuy XRPL</h3>
-            <p class="desk-handle">@ChillGuyXRPL</p>
-            <p class="desk-body">X and light Telegram only, token-based comp, lowercase/casual meme-forward voice. Ran a meme contest for the community.</p>
-            <a class="desk-link" href="https://x.com/ChillGuyXRPL" target="_blank" rel="noopener noreferrer">Open on X →</a>
-          </article>
-          <article class="desk-card desk-card-wide">
-            <p class="desk-role">Delegate CM &amp; Content Creator</p>
-            <h3>Feeturre</h3>
-            <p class="desk-handle">@feeturre</p>
-            <p class="desk-body">Posts directly from the official account in first-person brand voice. Daily content: GM posts, Collabathon ticket pushes, educational threads. Drafted their Discord architecture from scratch.</p>
-            <a class="desk-link" href="https://x.com/feeturre" target="_blank" rel="noopener noreferrer">Open on X →</a>
-          </article>
+      </section>
+
+      <section class="section" id="services">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Services</p>
+            <h2 class="heading">What I Do</h2>
+            <p class="lede">Community, content and growth support for Web3 projects that want a consistent voice and an active audience.</p>
+          </div>
+          <div class="cards cards-3">
+            <article class="card reveal">
+              <h3>Community Management</h3>
+              <p>Daily community presence across Telegram and Discord, member engagement, moderation, announcements and keeping conversations active.</p>
+              <ul class="checks two"><li>Daily community management</li><li>Moderation</li><li>Member engagement</li><li>Announcements</li><li>Community support</li><li>Community strategy</li></ul>
+            </article>
+            <article class="card reveal">
+              <h3>Content Writing</h3>
+              <p>Clear, engaging content designed to give Web3 brands a recognizable voice.</p>
+              <ul class="checks two"><li>X posts</li><li>Threads</li><li>Campaign copy</li><li>Educational content</li><li>Project announcements</li><li>Brand voice</li></ul>
+            </article>
+            <article class="card reveal">
+              <h3>Social Media Management</h3>
+              <p>Hands-on account management so the public voice stays consistent, on time, and actually talking to the room.</p>
+              <ul class="checks two"><li>Content planning</li><li>Posting</li><li>Engagement</li><li>Account management</li><li>Brand consistency</li><li>Community interaction</li></ul>
+            </article>
+            <article class="card reveal">
+              <h3>Campaign Management</h3>
+              <p>Week by week campaign planning that the community can actually follow, from giveaways to collabs.</p>
+              <ul class="checks two"><li>Campaign planning</li><li>Giveaways</li><li>Community campaigns</li><li>Engagement campaigns</li><li>Collaboration campaigns</li><li>Campaign copy</li></ul>
+            </article>
+            <article class="card reveal">
+              <h3>Discord Setup</h3>
+              <p>Clean server structure, roles and permissions so the room is organized before the audience arrives.</p>
+              <ul class="checks two"><li>Server structure</li><li>Channels</li><li>Roles</li><li>Permissions</li><li>Bots</li><li>Verification</li></ul>
+            </article>
+            <article class="card reveal">
+              <h3>Web3 Growth Support</h3>
+              <p>Community activation, partnerships and positioning for projects that want more than a quiet chat.</p>
+              <ul class="checks two"><li>Community growth</li><li>Partnerships</li><li>Collabs</li><li>Engagement strategy</li><li>Project positioning</li><li>Community activation</li></ul>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section services" id="services">
-      <div class="section-inner">
-        <p class="eyebrow">Services</p>
-        <h2>What I actually do.</h2>
-        <ol class="service-list">
-          <li><span class="svc-num">01</span><div><h3>Community management</h3><p>Discord and Telegram built from zero or taken over mid-flight — structure, moderation, team training.</p></div></li>
-          <li><span class="svc-num">02</span><div><h3>Daily content &amp; brand voice</h3><p>GM posts, threads, replies — matched to each project’s actual tone, not one generic Web3 voice reused everywhere.</p></div></li>
-          <li><span class="svc-num">03</span><div><h3>Feature articles</h3><p>Long-form project features, delivered as PDF and markdown, under my byline.</p></div></li>
-          <li><span class="svc-num">04</span><div><h3>Campaigns &amp; giveaways</h3><p>Planned week-by-week — tournaments, collabs, entry flows that the room can actually follow.</p></div></li>
-          <li><span class="svc-num">05</span><div><h3>Marketing lead / brand voice</h3><p>Full ownership of a project’s public voice across the channels that matter.</p></div></li>
-        </ol>
-      </div>
-    </section>
-    <section class="section writing" id="writing">
-      <div class="section-inner">
-        <p class="eyebrow">Writing</p>
-        <h2>Feature articles on X.</h2>
-        <p class="section-lede">Real pieces published under my handle. Titles and descriptions taken from the original posts.</p>
-        <ul class="writing-list">
-          <li><a href="https://x.com/i/article/2090156176298422272" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 19, 2026</span><span class="w-title">FuzzyCard Trading Co</span><span class="w-dek">On a project that built quietly for months — and the numbers finally catching up to the work.</span></a></li>
-          <li><a href="https://x.com/i/article/2088039587453018112" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 13, 2026</span><span class="w-title">Xrppossum Chapter 2</span><span class="w-dek">What’s being built behind Chapter 2 — gear economy and the new collections joining the fight.</span></a></li>
-          <li><a href="https://x.com/i/article/2086520133799776256" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 9, 2026</span><span class="w-title">Ink, Pops &amp; the Passport</span><span class="w-dek">Sitting down with Ink and Pops — pizza, art, a Passport, a whole town, same door.</span></a></li>
-          <li><a href="https://x.com/i/article/2085132457922170880" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 5, 2026</span><span class="w-title">Goodebags &amp; GoodebagsGames</span><span class="w-dek">Deep dive on two live NFT collections, two working games, and physical card decks you can hold.</span></a></li>
-          <li><a href="https://x.com/i/article/2081459820968792064" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 26, 2026</span><span class="w-title">Sleekbears Honey Faucet</span><span class="w-dek">Why the Honey Faucet — paying out for almost a year — is one of the better passive plays on XRPL right now.</span></a></li>
-          <li><a href="https://x.com/i/article/2080555923412508672" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 24, 2026</span><span class="w-title">Cub XRP — delisting, comeback, airdrop</span><span class="w-dek">The full story of an overlooked NFT collection: delisting, comeback, and a fully verifiable airdrop.</span></a></li>
-          <li><a href="https://x.com/i/article/2078451425047121920" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 18, 2026</span><span class="w-title">Feeturre feature</span><span class="w-dek">Feature on Feeturre for creators tired of platforms taking too much for too little.</span></a></li>
-          <li><a href="https://x.com/0xToby_eth/status/2089850664394293508" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 18, 2026</span><span class="w-title">The part of CM you never see</span><span class="w-dek">A thread on what community management actually looks like across multiple brand voices in one day.</span></a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="section rates" id="rates">
-      <div class="section-inner narrow">
-        <p class="eyebrow">Rates</p>
-        <h2>No fixed number on a page.</h2>
-        <p>Comp has looked like a flat monthly fee, equity plus revenue share, or token-based — depending on the project’s stage and how much of the public voice I’m taking on.</p>
-        <p>DM me with what you’re building and the scope you need. I’ll quote from there.</p>
-        <a class="btn btn-primary" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Send a brief on X</a>
-      </div>
-    </section>
-    <section class="section cta-band">
-      <div class="section-inner cta-inner">
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Approach</p>
+            <h2 class="heading">Why Projects Work With Me</h2>
+          </div>
+          <div class="cards cards-3">
+            <article class="card surface reveal"><p class="role">01</p><h3>Community First</h3><p>I focus on building communities that actually communicate, not just increasing member counts.</p></article>
+            <article class="card surface reveal"><p class="role">02</p><h3>Consistent Voice</h3><p>Your project should sound like one brand across every platform.</p></article>
+            <article class="card surface reveal"><p class="role">03</p><h3>Web3 Native</h3><p>I understand the culture, terminology and fast moving nature of Web3 communities.</p></article>
+            <article class="card surface reveal"><p class="role">04</p><h3>Hands On</h3><p>I am involved in the day to day work rather than simply creating a strategy document.</p></article>
+            <article class="card surface reveal"><p class="role">05</p><h3>Reliable Communication</h3><p>Clients should always know what is happening and what comes next.</p></article>
+            <article class="card surface reveal"><p class="role">06</p><h3>Flexible Support</h3><p>I can support a project with community, content, campaigns or a combination of services.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Selected desks</p>
+            <h2 class="heading">Proof of Work</h2>
+            <p class="lede">Real work, real projects, real communities. Each project gets its own voice.</p>
+          </div>
+          <div class="cards cards-2">
+            <article class="card span-all reveal">
+              <div class="cover">
+                <div>
+                  <p class="desk-label">Sold out</p>
+                  <p class="big">1,230</p>
+                  <p style="margin:0;color:var(--muted)">NFTs in under 24 hours</p>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">XRP Conspiracy Series 1</p>
+                  <p class="handle">XRPL · Launch</p>
+                </div>
+              </div>
+              <p class="role">Community Manager / Launch Communications</p>
+              <h3>XRP Conspiracy Series 1</h3>
+              <p>Co-managed community and launch communications for XRP Conspiracy Series 1, an NFT collection that sold out 1,230 NFTs in under 24 hours, alongside Mike Berger and the team. That launch is where my name in XRPL community work began.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">Community management</span><span class="chip">Launch communications</span><span class="chip">Campaign support</span></div>
+              <p class="outcome">Collection sold out 1,230 NFTs in under 24 hours. This is where my XRPL community reputation started.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="cover">
+                <div>
+                  <p class="desk-label">4-week series</p>
+                  <div class="weeks"><span class="week">W1</span><span class="week on">W2</span><span class="week">W3</span><span class="week">W4</span></div>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">Possum Tails</p>
+                  <p class="handle">@xrppossum</p>
+                </div>
+              </div>
+              <p class="role">Marketing Lead</p>
+              <h3>Possum Tails</h3>
+              <p>Running a 4-week giveaway content series with weekly drops, tournament write-ups and Saturday ops, plus feature articles. Landed the paid role after writing a free feature article as a goodwill contribution.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">Marketing lead</span><span class="chip">Content</span><span class="chip">Campaigns</span><span class="chip">Feature articles</span><span class="chip">X</span></div>
+              <p class="outcome">Hired as Marketing Lead after a goodwill feature article.</p>
+              <a class="btn btn-ghost" href="https://x.com/xrppossum" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="card reveal">
+              <div class="cover">
+                <div>
+                  <div class="mini"><b>Discord</b><span>Built from scratch</span></div>
+                  <div class="mini"><b>Telegram</b><span>Trial completed · NDA signed</span></div>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">Rhyzlo</p>
+                  <p class="handle">@rhyzlo_xrpl</p>
+                </div>
+              </div>
+              <p class="role">Community Manager</p>
+              <h3>Rhyzlo</h3>
+              <p>Built Discord and Telegram from scratch, completed a 30-day trial and signed an NDA. Turned a public challenge from XRPL builders into a collaborator relationship.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">Community management</span><span class="chip">Discord</span><span class="chip">Telegram</span><span class="chip">Moderation</span><span class="chip">X</span></div>
+              <p class="outcome">Completed a 30-day trial, signed an NDA, and converted a public challenge into a working relationship.</p>
+              <a class="btn btn-ghost" href="https://x.com/rhyzlo_xrpl" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="card reveal">
+              <div class="cover">
+                <div>
+                  <p class="desk-label">Educational</p>
+                  <p style="margin:.35rem 0 0;font-family:var(--font-display);font-size:1.6rem">PLX tokenomics</p>
+                  <p style="margin:.4rem 0 0;color:var(--muted);font-size:.9rem">Lineage royalty mechanic, in brand voice</p>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">Pollux</p>
+                  <p class="handle">@POLLUX_XRPL</p>
+                </div>
+              </div>
+              <p class="role">Community Manager</p>
+              <h3>Pollux</h3>
+              <p>Delegate posting access. Educational content on PLX tokenomics and the lineage royalty mechanic.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">X content</span><span class="chip">Educational writing</span><span class="chip">Brand voice</span></div>
+              <a class="btn btn-ghost" href="https://x.com/POLLUX_XRPL" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="card reveal">
+              <div class="cover">
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:2rem">gm.</p>
+                  <p style="margin:.5rem 0 0;color:var(--muted);font-size:.9rem">lowercase, casual, meme-forward. contest ran.</p>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">ChillGuy XRPL</p>
+                  <p class="handle">@ChillGuyXRPL</p>
+                </div>
+              </div>
+              <p class="role">Community Manager</p>
+              <h3>ChillGuy XRPL</h3>
+              <p>X and light Telegram only, token-based compensation, lowercase and casual meme-forward voice. Ran a meme contest for the community.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">X</span><span class="chip">Telegram</span><span class="chip">Meme contest</span><span class="chip">Community campaigns</span></div>
+              <a class="btn btn-ghost" href="https://x.com/ChillGuyXRPL" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="card reveal">
+              <div class="cover">
+                <div>
+                  <div class="mini"><b>Official X</b><span>First-person brand voice</span></div>
+                  <div class="mini"><b>Discord</b><span>Architecture drafted from zero</span></div>
+                </div>
+                <div>
+                  <p style="margin:0;font-family:var(--font-display);font-size:1.5rem">Feeturre</p>
+                  <p class="handle">@feeturre</p>
+                </div>
+              </div>
+              <p class="role">Delegate CM & Content Creator</p>
+              <h3>Feeturre</h3>
+              <p>Posts directly from the official account in first-person brand voice. Daily content including GM posts, Collabathon ticket pushes and educational threads. Drafted their Discord architecture from scratch.</p>
+              <p class="worked">Worked on</p>
+              <div class="chips"><span class="chip">Official X voice</span><span class="chip">Daily content</span><span class="chip">Educational threads</span><span class="chip">Discord architecture</span></div>
+              <p class="outcome">Drafted Discord architecture from scratch and now posts in first-person brand voice from the official account.</p>
+              <a class="btn btn-ghost" href="https://x.com/feeturre" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Case Studies</p>
+            <h2 class="heading">How the work actually ran</h2>
+            <p class="lede">Short stories from desks that already exist. No invented metrics.</p>
+          </div>
+          <div class="cards cards-2">
+            <article class="card surface case reveal">
+              <h3>XRP Conspiracy Series 1</h3>
+              <dl>
+                <dt>The Challenge</dt><dd>Launch an NFT collection with community and communications that could hold up under a real drop.</dd>
+                <dt>The Approach</dt><dd>Co-managed community and launch communications with Mike Berger and the team.</dd>
+                <dt>The Execution</dt><dd>Day to day community voice, launch messaging and keeping the room aligned through the drop window.</dd>
+                <dt>The Outcome</dt><dd>The collection sold out 1,230 NFTs in under 24 hours. This launch is where my name in XRPL community work began.</dd>
+              </dl>
+            </article>
+            <article class="card surface case reveal">
+              <h3>Rhyzlo</h3>
+              <dl>
+                <dt>The Challenge</dt><dd>No Discord or Telegram presence. The project needed a real community surface, not a placeholder.</dd>
+                <dt>The Approach</dt><dd>Built Discord and Telegram from scratch, ran a 30-day trial and signed an NDA.</dd>
+                <dt>The Execution</dt><dd>Server structure, daily presence and turning a public challenge from XRPL builders into a collaborator relationship.</dd>
+                <dt>The Outcome</dt><dd>Trial completed, NDA signed, and a working collaborator relationship in place.</dd>
+              </dl>
+            </article>
+            <article class="card surface case reveal">
+              <h3>Possum Tails</h3>
+              <dl>
+                <dt>The Challenge</dt><dd>The project needed a marketing lead and a content engine that could run a multi-week campaign.</dd>
+                <dt>The Approach</dt><dd>Wrote a free feature article as a goodwill contribution, then took the paid Marketing Lead seat.</dd>
+                <dt>The Execution</dt><dd>A 4-week giveaway content series with weekly drops, tournament write-ups, Saturday ops and ongoing feature articles.</dd>
+                <dt>The Outcome</dt><dd>Landed the paid Marketing Lead role off the quality of the work.</dd>
+              </dl>
+            </article>
+            <article class="card surface case reveal">
+              <h3>Feeturre</h3>
+              <dl>
+                <dt>The Challenge</dt><dd>The project needed an official public voice and a Discord that was designed before the room filled up.</dd>
+                <dt>The Approach</dt><dd>Took first-person brand voice on the official X account and drafted Discord architecture from scratch.</dd>
+                <dt>The Execution</dt><dd>Daily GM posts, Collabathon ticket pushes, educational threads and a structured server plan.</dd>
+                <dt>The Outcome</dt><dd>A consistent official-account voice and a drafted Discord architecture ready for the community.</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="writing">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Content Samples</p>
+            <h2 class="heading">Published writing</h2>
+            <p class="lede">Feature articles and a thread under my handle, plus clearly labeled sample copy.</p>
+          </div>
+          <div class="write">
+            <a href="https://x.com/i/article/2090156176298422272" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 19, 2026</span><span><span class="w-title">FuzzyCard Trading Co</span><span class="w-dek">On a project that built quietly for months, and the numbers finally catching up to the work.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/0xToby_eth/status/2089850664394293508" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 18, 2026</span><span><span class="w-title">The part of CM you never see</span><span class="w-dek">A thread on what community management actually looks like across multiple brand voices in one day.</span></span><span class="w-go">View on X</span></a>
+            <a href="https://x.com/i/article/2088039587453018112" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 13, 2026</span><span><span class="w-title">Xrppossum Chapter 2</span><span class="w-dek">What is being built behind Chapter 2, including the gear economy and the new collections joining the fight.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/i/article/2086520133799776256" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 9, 2026</span><span><span class="w-title">Ink, Pops & the Passport</span><span class="w-dek">Sitting down with Ink and Pops. Pizza, art, a Passport, a whole town, same door.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/i/article/2085132457922170880" target="_blank" rel="noopener noreferrer"><span class="w-date">Aug 5, 2026</span><span><span class="w-title">Goodebags & GoodebagsGames</span><span class="w-dek">Deep dive on two live NFT collections, two working games, and physical card decks you can hold.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/i/article/2081459820968792064" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 26, 2026</span><span><span class="w-title">Sleekbears Honey Faucet</span><span class="w-dek">Why the Honey Faucet, paying out for almost a year, is one of the better passive plays on XRPL right now.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/i/article/2080555923412508672" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 24, 2026</span><span><span class="w-title">Cub XRP: delisting, comeback, airdrop</span><span class="w-dek">The full story of an overlooked NFT collection: delisting, comeback, and a fully verifiable airdrop.</span></span><span class="w-go">Read Article</span></a>
+            <a href="https://x.com/i/article/2078451425047121920" target="_blank" rel="noopener noreferrer"><span class="w-date">Jul 18, 2026</span><span><span class="w-title">Feeturre feature</span><span class="w-dek">Feature on Feeturre for creators tired of platforms taking too much for too little.</span></span><span class="w-go">Read Article</span></a>
+          </div>
+          <div class="cards cards-3">
+            <article class="card reveal"><div class="price-head"><h3 style="margin:0">GM post</h3><span class="chip">Sample copy</span></div><p>gm. new day, same job. keep the room talking and the voice consistent. if you are building, say it. if you are stuck, ask. we are here either way.</p></article>
+            <article class="card reveal"><div class="price-head"><h3 style="margin:0">Announcement</h3><span class="chip">Sample copy</span></div><p>Tonight's drop is live. Rules are in the pinned post. Read them once, then enter. If a step is unclear, ask in the chat before you submit.</p></article>
+            <article class="card reveal"><div class="price-head"><h3 style="margin:0">Campaign copy</h3><span class="chip">Sample copy</span></div><p>Week 2 of the series is up. One prize. One thread. One room. Show up, follow the steps, and leave the spam at the door.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="packages">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Retainers</p>
+            <h2 class="heading">Packages</h2>
+            <p class="lede">Flexible support depending on where your project is today.</p>
+          </div>
+          <div class="cards cards-4">
+            <article class="card reveal">
+              <div class="price-head"><p class="role" style="margin:0">Starter</p></div>
+              <p class="price">$150 <small>/ month</small></p>
+              <p>For early stage projects that need consistent community support.</p>
+              <ul class="checks"><li>Community management</li><li>Telegram/Discord moderation</li><li>Basic content support</li><li>Community engagement</li><li>Weekly reporting</li></ul>
+              <a class="btn btn-ghost btn-full" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </article>
+            <article class="card featured reveal">
+              <div class="price-head"><p class="role" style="margin:0">Growth</p><span class="badge">Recommended</span></div>
+              <p class="price">$300 <small>/ month</small></p>
+              <p>For growing projects that need community and content working together.</p>
+              <ul class="checks"><li>Everything in Starter</li><li>X content management</li><li>Campaign support</li><li>Community strategy</li><li>Content planning</li><li>Partnership/Collab support</li><li>More active community management</li></ul>
+              <a class="btn btn-primary btn-full" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Choose Growth</a>
+            </article>
+            <article class="card reveal">
+              <div class="price-head"><p class="role" style="margin:0">Pro</p></div>
+              <p class="price">$500 <small>/ month</small></p>
+              <p>For projects looking for full community and content support.</p>
+              <ul class="checks"><li>Everything in Growth</li><li>Full community management</li><li>X content management</li><li>Campaign management</li><li>Discord management</li><li>Community growth strategy</li><li>Brand voice management</li><li>Priority communication</li><li>Monthly strategy review</li></ul>
+              <a class="btn btn-ghost btn-full" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Choose Pro</a>
+            </article>
+            <article class="card reveal">
+              <div class="price-head"><p class="role" style="margin:0">Custom</p></div>
+              <p class="price">Let's Talk</p>
+              <p>For larger projects or custom requirements.</p>
+              <ul class="checks"><li>Custom scope</li><li>Custom deliverables</li><li>Flexible hours</li><li>Multi-platform support</li><li>Long-term collaboration</li></ul>
+              <a class="btn btn-ghost btn-full" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">Contact Me</a>
+            </article>
+          </div>
+          <p class="note">Need something different? Custom packages are available.</p>
+        </div>
+      </section>
+
+      <section class="section" id="one-time">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">A la carte</p>
+            <h2 class="heading">One Time Services</h2>
+            <p class="lede">Prices may vary depending on scope. These are starting points, not a rigid menu.</p>
+          </div>
+          <div class="cards cards-3 one" style="margin-top:2.5rem">
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>Discord Setup</b><span>From $100</span></span></a>
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>X Content Pack</b><span>From $75</span></span></a>
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>Community Strategy</b><span>From $100</span></span></a>
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>Campaign Management</b><span>From $150</span></span></a>
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>Article / Long Form Content</b><span>From $30</span></span></a>
+            <a class="reveal" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer"><span><b>Custom Work</b><span>Let's Talk</span></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Process</p>
+            <h2 class="heading">How It Works</h2>
+          </div>
+          <ol class="steps">
+            <li><p class="n">01</p><h3>Tell Me About Your Project</h3></li>
+            <li><p class="n">02</p><h3>We Define the Scope</h3></li>
+            <li><p class="n">03</p><h3>I Start the Work</h3></li>
+            <li><p class="n">04</p><h3>You Get Consistent Updates</h3></li>
+            <li><p class="n">05</p><h3>We Review and Improve</h3></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="wrap about">
+          <div class="reveal">
+            <div class="pixel">
+              <img src="assets/toby-portrait.jpg" width="400" height="400" alt="Toby, pixel-art profile portrait" onerror="this.src='assets/portrait.svg'" />
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="eyebrow">About</p>
+            <h2 class="heading">A Little About Me</h2>
+            <p class="lede">I'm Toby, a Web3 Community Manager, Moderator and Content Writer focused on helping projects communicate better and build stronger communities.</p>
+            <p class="lede">My work combines community management, content creation, campaign support and day to day communication.</p>
+            <p class="lede">I am especially focused on the XRPL ecosystem and enjoy working closely with teams that are building useful products and strong communities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Skills</p>
+            <h2 class="heading">What I bring to a desk</h2>
+          </div>
+          <ul class="tags">
+            <li>Community Management</li><li>Moderation</li><li>Content Writing</li><li>X Management</li><li>Discord Management</li><li>Telegram Management</li><li>Campaign Management</li><li>Community Growth</li><li>Brand Voice</li><li>Web3 Research</li><li>Collaboration Management</li><li>Project Coordination</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2 class="heading">What People Say</h2>
+            <article class="card" style="margin-top:2rem;max-width:36rem">
+              <h3>Client testimonials coming soon.</h3>
+              <p>I am not going to invent quotes. When clients share something I can publish, it will live here.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="wrap faq-grid">
+          <div class="reveal">
+            <p class="eyebrow">Questions</p>
+            <h2 class="heading">FAQ</h2>
+          </div>
+          <div>
+            <div class="faq-item open">
+              <button type="button" aria-expanded="true">What type of Web3 projects do you work with?</button>
+              <div class="faq-panel">Projects that need community, content and a consistent public voice. Most of my current work is with XRPL teams, including early stage and growing products.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">Do you work with XRPL projects?</button>
+              <div class="faq-panel">Yes. I am XRPL native, and the majority of my current desks sit in that ecosystem.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">Can you manage both Discord and Telegram?</button>
+              <div class="faq-panel">Yes. I can build them from scratch or take over an existing server or group, including structure, moderation and daily presence.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">Can you manage an X account?</button>
+              <div class="faq-panel">Yes. I currently manage or contribute to multiple project accounts, each with its own voice rather than one reused tone.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">Do you offer custom packages?</button>
+              <div class="faq-panel">Yes. If the listed retainers do not match your scope, we can define a custom one.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">How do payments work?</button>
+              <div class="faq-panel">Monthly retainers for ongoing work, and quoted fees for one-time services. Compensation has also included token-based or equity arrangements depending on the project.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">How quickly can you start?</button>
+              <div class="faq-panel">Timing depends on current commitments. Send a brief and I will tell you what is realistic.</div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false">Can you work long term?</button>
+              <div class="faq-panel">Yes. Most of my current work is ongoing rather than one-off.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap">
+          <div class="cta reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 class="heading">Let's Build Something Strong</h2>
+            <p class="lede">Have a Web3 project that needs a stronger community, better content or consistent day to day management?</p>
+            <div class="actions">
+              <a class="btn btn-primary btn-lg" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">DM Me on X</a>
+              <a class="btn btn-ghost btn-lg" href="https://x.com/0xToby_eth" target="_blank" rel="noopener noreferrer">View X Profile</a>
+            </div>
+            <p class="handle" style="margin-top:1.5rem;color:var(--accent)">@0xToby_eth</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap foot">
         <div>
-          <p class="eyebrow">Hire</p>
-          <h2>If the room needs a grown-up voice.</h2>
-          <p>Primary contact is X. No form, no email gate — just the DM.</p>
+          <p class="logo" style="margin:0">
+            <img src="assets/toby-portrait.jpg" width="32" height="32" alt="" onerror="this.src='assets/portrait.svg'" />
+            Toby
+          </p>
+          <p class="lede" style="margin-top:.75rem">Web3 Community Manager<br />Moderator<br />Content Writer</p>
         </div>
-        <a class="btn btn-primary btn-lg" href="https://x.com/messages/compose?recipient_id=1595314539947499525" target="_blank" rel="noopener noreferrer">DM @0xToby_eth</a>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark-bg" role="img" aria-label="" style="width:36px;height:36px;"></span>
+        <nav aria-label="Footer">
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#packages">Packages</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
         <div>
-          <p class="footer-name">Toby <span aria-hidden="true">🃏</span></p>
-          <p class="footer-meta">Web3 CM &amp; Content Writer · XRPL native</p>
+          <a class="xlink" href="https://x.com/0xToby_eth" target="_blank" rel="noopener noreferrer">X · @0xToby_eth</a>
+          <p class="meta">© 2026 Toby. All rights reserved.</p>
         </div>
       </div>
-      <a class="footer-x" href="https://x.com/0xToby_eth" target="_blank" rel="noopener noreferrer">@0xToby_eth</a>
-    </div>
-  </footer>
-  <script>
-    (function () {
-      var toggle = document.getElementById("navToggle");
-      var nav = document.getElementById("siteNav");
-      if (!toggle || !nav) return;
-      toggle.addEventListener("click", function () {
-        var open = nav.classList.toggle("open");
-        toggle.setAttribute("aria-expanded", open ? "true" : "false");
-        toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-      });
-      nav.querySelectorAll("a").forEach(function (a) {
-        a.addEventListener("click", function () {
-          nav.classList.remove("open");
-          toggle.setAttribute("aria-expanded", "false");
-          toggle.setAttribute("aria-label", "Open menu");
-        });
-      });
-    })();
-  </script>
+    </footer>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

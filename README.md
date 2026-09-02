@@ -1,15 +1,7 @@
-# Toby — Web3 CM & Content Writer
+# Toby · Web3 portfolio
 
-Personal portfolio for [@0xToby_eth](https://x.com/0xToby_eth) — XRPL native community manager and content writer.
+Personal portfolio for Toby ([@0xToby_eth](https://x.com/0xToby_eth)): Web3 Community Manager, Moderator and Content Writer.
 
-**Live site:** https://liltoby123.github.io/toby-portfolio/
+Live: [liltoby123.github.io/toby-portfolio](https://liltoby123.github.io/toby-portfolio/)
 
-## Stack
-Static HTML/CSS. No build step. Real pixel PFP + banner embedded as data-URIs for zero external image requests.
-
-## Local
-Open `index.html` in a browser, or:
-
-```bash
-python3 -m http.server 8080
-```
+Static site. Relative asset paths. No build step. GitHub Pages serves `index.html` from `main`.
