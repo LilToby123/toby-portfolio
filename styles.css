@@ -84,8 +84,8 @@ p { text-wrap: pretty; }
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(900px 420px at 12% -8%, rgba(196, 163, 224, 0.08), transparent 60%),
-    radial-gradient(700px 380px at 100% 8%, rgba(196, 163, 224, 0.04), transparent 55%);
+    radial-gradient(720px 280px at 8% -12%, rgba(196, 163, 224, 0.06), transparent 62%),
+    radial-gradient(520px 240px at 100% 0%, rgba(196, 163, 224, 0.03), transparent 55%);
 }
 
 .skip {
@@ -147,8 +147,13 @@ p { text-wrap: pretty; }
 
 .section {
   scroll-margin-top: 5.5rem;
-  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  padding: clamp(3rem, 6vw, 5.25rem) 0;
   border-bottom: 1px solid var(--border);
+}
+
+.hero.section {
+  padding-top: 1.25rem;
+  padding-bottom: clamp(2.25rem, 5vw, 3.5rem);
 }
 
 .lede { margin: 1rem 0 0; max-width: 36rem; color: var(--muted); }
@@ -271,17 +276,17 @@ header.site {
 
 .hero-grid {
   display: grid;
-  gap: 2.5rem;
+  gap: 1.75rem;
   align-items: center;
 }
 @media (min-width: 1024px) {
-  .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 3.5rem; }
+  .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 3rem; }
 }
 
 .hero h1 { margin: 1rem 0 0; }
 .title-line { margin: 0.75rem 0 0; font-size: 1.15rem; color: var(--fg-soft); }
 .hero .lede { font-size: 1.05rem; }
-.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 .avail {
   display: inline-flex;
   align-items: center;
@@ -543,6 +548,8 @@ header.site {
 .card .btn { margin-top: 1.5rem; align-self: flex-start; }
 .card .btn.btn-full { align-self: stretch; width: 100%; }
 
+.case h3 { margin: 0; }
+.case dl { margin: 1.1rem 0 0; display: grid; gap: 0.9rem; }
 .case dt {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -550,7 +557,7 @@ header.site {
   text-transform: uppercase;
   color: var(--accent);
 }
-.case dd { margin: 0.4rem 0 1rem; color: var(--muted); font-size: 0.95rem; }
+.case dd { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
 
 .write {
   margin-top: 2.5rem;
@@ -592,7 +599,13 @@ header.site {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-.note { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+.note { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; max-width: 42rem; }
+.best {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
 
 .one a {
   display: flex;
@@ -671,6 +684,20 @@ header.site {
 }
 .tags { padding: 0; }
 
+.quote-slot {
+  margin: 1.15rem 0 0;
+  min-height: 3.5rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--subtle);
+}
+.who {
+  margin: 1.25rem 0 0;
+  font-size: 0.95rem;
+  color: var(--fg-soft);
+}
+
 .faq-grid {
   display: grid;
   gap: 2.5rem;
@@ -737,6 +764,11 @@ footer.site {
   .dot::after { animation: none; display: none; }
 }
 
-@media (max-width: 390px) {
-  .display { font-size: clamp(2.7rem, 16vw, 3.4rem); }
+@media (max-width: 430px) {
+  .display { font-size: clamp(2.6rem, 15vw, 3.3rem); }
+  .btn-lg { width: 100%; }
+  .actions { gap: 0.6rem; }
+  .wrap { width: min(var(--max), calc(100% - 1.5rem)); }
+  .stat { padding: 1.25rem 0.75rem; }
+  .stat b { font-size: 1.7rem; }
 }
